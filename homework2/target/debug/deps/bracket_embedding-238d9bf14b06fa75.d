@@ -1,0 +1,8 @@
+D:\rust-demo\homework2\target\debug\deps\libbracket_embedding-238d9bf14b06fa75.rmeta: C:\Users\chenk\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bracket-embedding-0.8.7\src\lib.rs C:\Users\chenk\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bracket-embedding-0.8.7\src\embedding.rs C:\Users\chenk\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bracket-embedding-0.8.7\src\../resources/terminal8x8.png C:\Users\chenk\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bracket-embedding-0.8.7\src\../resources/vga8x16.png
+
+D:\rust-demo\homework2\target\debug\deps\bracket_embedding-238d9bf14b06fa75.d: C:\Users\chenk\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bracket-embedding-0.8.7\src\lib.rs C:\Users\chenk\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bracket-embedding-0.8.7\src\embedding.rs C:\Users\chenk\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bracket-embedding-0.8.7\src\../resources/terminal8x8.png C:\Users\chenk\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bracket-embedding-0.8.7\src\../resources/vga8x16.png
+
+C:\Users\chenk\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bracket-embedding-0.8.7\src\lib.rs:
+C:\Users\chenk\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bracket-embedding-0.8.7\src\embedding.rs:
+C:\Users\chenk\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bracket-embedding-0.8.7\src\../resources/terminal8x8.png:
+C:\Users\chenk\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bracket-embedding-0.8.7\src\../resources/vga8x16.png:
