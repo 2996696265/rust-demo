@@ -2,3 +2,7 @@ hello!
 welcome!
 使用指南：
 双击run_project.bat文件即可运行。
+注意：第一次运行时，请在运行结束后重启电脑，并再次双击运行run_project.bat文件。
+
+
+开发人员说明：src文件夹里的main.rs是主程序代码，un_project.bat和setup_and_run.ps1 是用户友好的部分，点击之后就会帮用户运行程序（如果没有配置过rust环境，就会帮他配置环境）。

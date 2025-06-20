@@ -9,11 +9,27 @@ if ($currentPolicy -ne 'RemoteSigned' -and $currentPolicy -ne 'Unrestricted') {
 # Check if rustup is installed
 if (-not (Get-Command rustup -ErrorAction SilentlyContinue)) {
     Write-Host "`nRust is not installed. Installing Rust..."
-    Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://win.rustup.rs'))
-    # Append cargo bin to PATH for current process only
-    $env:Path += ';' + $env:USERPROFILE + '\.cargo\bin'
+
+    # Download rustup-init.exe
+    $rustupInstaller = "$env:TEMP\rustup-init.exe"
+    Invoke-WebRequest -Uri "https://win.rustup.rs" -OutFile $rustupInstaller
+
+    # Run the installer
+    Start-Process -FilePath $rustupInstaller -Wait -NoNewWindow
+
+    # Optional: remove installer after use
+    Remove-Item $rustupInstaller -Force
+
+    # Append cargo bin to PATH for current session
+    $env:Path += ';' + "$env:USERPROFILE\.cargo\bin"
 } else {
-    Write-Host "`nRust is already installed. Skipping installation and update."
+    Write-Host "`nRust is already installed. Skipping installation."
+}
+
+# Verify cargo is available
+if (-not (Get-Command cargo -ErrorAction SilentlyContinue)) {
+    Write-Host "`nERROR: Cargo is still not available after installation. Please check your Rust installation."
+    exit 1
 }
 
 # Change directory to the script location
